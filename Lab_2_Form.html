@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Contact Form</title>
+    <style>
+      body {
+        background-color: darkseagreen;
+      }
+
+      #submissionButton {
+        background: darkolivegreen;
+        color: antiquewhite;
+        margin-top: 20px;
+        margin-left: 200px;
+      }
+
+      #submissionButton:hover {
+        background: antiquewhite;
+        color: darkolivegreen;
+      }
+
+      .nameDetails {
+        margin-left: 200px;
+        margin-right: 200px;
+        font-size: 20px;
+      }
+
+      #email {
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Contact Form (Lab 2)</h1>
+    <form name="labTwoForm" method="get" action="Lab_2_Success_Form.html">
+      <div class="nameDetails">
+        <!-- Name -->
+        <label for="firstName">First Name:</label> <br>
+        <input type="text" id="firstName" required />
+        <br>
+        <label for="lastame">Last Name:</label> <br>
+        <input type="text" id="lastName" required />
+        <br>
+        <label for="phoneNumber">Phone Number:</label> <br>
+        <input
+          type="text"
+          id="phoneNumber"
+          placeholder="(123) 456-7890"
+          required
+        />
+      </div>
+
+      <br>
+      <hr>
+
+      <!-- Submit Button -->
+      <label for="submit">Submit Form:</label> <br>
+      <input type="submit" id="submissionButton" value="Submit" />
+    </form>
+  </body>
+</html>
